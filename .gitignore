@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+.venv310/
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Models
+*.h5
+*.keras
+
+# Large datasets
+*.npz
+*.csv
+
+# OS
+.DS_Store
+Thumbs.db
