@@ -2,7 +2,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import train_test_split
 
-def load_data(path="new_liver_dataset.npz"):
+def load_data(path="new_liver_dataset6K.npz"):
     
     data = np.load(path)
     images = data['images']
@@ -118,7 +118,7 @@ def preprocess():
     print("Test:", X_test.shape)
 
     save_processed_dataset(
-        "new_processed_dataset.npz",
+        "new_processed_dataset6Kg.npz",
         X_train,
         X_val,
         X_test,

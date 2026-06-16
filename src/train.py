@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from model import build_model
 
 def load_processed_dat():
-    data = np.load(r"E:\Liver_on_chip\datas\new_processed_dataset.npz")
+    data = np.load(r"datas\new_processed_dataset.npz")
     X_train = data['X_train']
     y_train = data['y_train']
     X_val = data['X_val']
@@ -34,7 +34,7 @@ def train():
     test_loss, test_acc = model.evaluate(X_test, y_test)
     print(f"Test Loss: {test_loss}, Test Accuracy: {test_acc}")
     
-    model.save("livercell_classifier3.keras")
+    model.save("livercell_classifier4.keras")
     print("Model saved as livercell_classifier.keras")
     
     plt.figure(figsize=(8,5))

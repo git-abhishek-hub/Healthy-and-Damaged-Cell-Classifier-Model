@@ -84,10 +84,10 @@ def generate_damage1():
     return img
 
 def database(
-    healthy_count = 400,
-    damage_count1 = 45,
-    damage_count2 = 55,
-    save_path="new_liver_dataset.npz"
+    healthy_count = 4000,
+    damage_count1 = 900,
+    damage_count2 = 1100,
+    save_path="new_liver_dataset6K.npz"
 ):
     images = []
     labels = []
@@ -126,8 +126,8 @@ def database(
     
 if __name__ == "__main__":
         database(
-            healthy_count = 500,
-            damage_count1 = 45,
-            damage_count2 = 55
+            healthy_count = 4000,
+            damage_count1 = 900,
+            damage_count2 = 1100
         )
     

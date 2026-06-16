@@ -12,7 +12,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 # 1. LOAD DATA
 # ====================================================
 
-data = np.load(r"datas/new_processed_dataset.npz")
+data = np.load(r"new_processed_dataset6K.npz")
 
 X_train = data["X_train"]
 X_val = data["X_val"]
